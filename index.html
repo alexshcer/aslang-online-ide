@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="editor-styles.css" />
+    <title>aslang online IDE</title>
+    <meta name="description" content="An Online IDE for as lang" />
+    <meta content="#f92672" name="theme-color" />
+  </head>
+  <link
+		rel="icon"
+		href="https://raw.githubusercontent.com/alexshcer/alexshcer.github.io/main/as-transparent.png"
+	/>
+  <body>
+    <div>
+      <h1 id="heading" style="font-family: Agency FB; font-size: 40px;" >aslang v0.1</h1>
+    </div>
+    <div class="editor">
+      <div class="editor__wrapper">
+        <div class="editor__body">
+          <div id="editorCode" class="editor__code"></div>
+        </div>
+        <div class="editor__footer">
+          <div class="editor__footer--left">
+            <button class="editor__btn editor__run" style="font-family: Agency FB; font-size: 20px;">Run</button>
+            <button class="editor__btn editor__reset" style="font-family: Agency FB; font-size: 20px;">Clear</button>
+          </div>
+          <div class="editor__footer--right">
+            <div class="editor__console">
+              <ul class="editor__console-logs"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="editor.js"></script>
+    <footer class="copyright">
+      © 2021
+      <a class="proof_link"
+        href="https://raw.githubusercontent.com/alexshcer/justice/main/proof.jpg"
+        target="_blank"
+        >asadev</a
+      >
+    </footer>
+  </body>
+</html>
