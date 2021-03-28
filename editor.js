@@ -34,7 +34,7 @@ executeCodeBtn.addEventListener("click", () => {
   const url = "https://aslang.vercel.app/api/run?" + new URLSearchParams(params);
 
   console.log(url);
-  console_.innerText = "Processing please wait or you may leave....";
+  console_.innerText = "Processing.... if your internet is slow the output will be slow";
   try {
     fetch(url)
       .then((response) => response.json())
